@@ -36,7 +36,7 @@ const thoughtController = {
     },
 
     // update Thought by id
-    updateThough({ params, body }, res) {
+    updateThought({ params, body }, res) {
         Thought.findOneAndUpdate({ _id: params.id }, body, { new: true })
             .then(dbThoughtData => {
                 if(!dbThoughtData) {
