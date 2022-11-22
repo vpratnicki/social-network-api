@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "watch": "nodemon server.js"
-
   },
   "repository": {
     "type": "git",
@@ -22,6 +21,7 @@
   "homepage": "https://github.com/vpratnicki/social-network-api#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "mongoose": "^6.7.2",
     "nodemon": "^2.0.20"
   }
 }
