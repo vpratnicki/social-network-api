@@ -40,7 +40,7 @@ const thoughtController = {
         );
       })
       .then((dbThoughtData) => res.json(dbThoughtData))
-      .catch((err) => res.status(400).json(err));
+      .catch(err => res.status(400).json(err));
   },
 
   // add reaction to thought
@@ -48,7 +48,7 @@ const thoughtController = {
     Thought.findOneAndUpdate(
       { _id: params.thoughtId },
       { $push: { reactions: body } },
-      { new: true, runValidators: true }
+      { new: true }
     )
       .select("-__v")
       .then((dbThoughtData) => {
