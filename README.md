@@ -50,10 +50,11 @@ Test the routes using Inomnia Core:
 - `DELETE` to pull and remove a reaction by the reaction's reactionId value.
 
 ## Walkthrough Videos
-- User Routes
-- Friend Routes
-- Thought Routes
-- Reaction Routes
+- [Starting the Server](https://watch.screencastify.com/v/FsoQwrdLsD7Epkrwhb3l)
+- [User Routes](https://watch.screencastify.com/v/2E6SHEDN7YY0sq4DB5WZ)
+- [Thought Routes](https://watch.screencastify.com/v/MJc5PR82YxdzgINyXJQe)
+- [Friend Routes](https://watch.screencastify.com/v/Iq6cg1Aag3FgndkhjWRN)
+- [Reaction Routes](https://watch.screencastify.com/v/Gu5OTkwGGALldk2n5oua)
 
 ## Contributing 
 
