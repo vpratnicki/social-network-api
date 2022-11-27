@@ -43,17 +43,13 @@ const thoughtController = {
       .catch((err) => res.status(400).json(err));
   },
 
-  // add reaction
+  // add reaction to thought
   addReaction({ params, body }, res) {
     Thought.findOneAndUpdate(
       { _id: params.thoughtId },
       { $push: { reactions: body } },
       { new: true }
     )
-      .populate({
-        path: "reactions",
-        select: "-__v",
-      })
       .select("-__v")
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
@@ -62,7 +58,7 @@ const thoughtController = {
         }
         res.json(dbThoughtData);
       })
-      .catch((err) => res.status(400).json(err));
+      .catch(err => res.status(400).json(err));
   },
 
   // update Thought by id
@@ -88,7 +84,7 @@ const thoughtController = {
         }
         res.json(dbThoughtData);
       })
-      .catch((err) => res.status(400).json(err));
+      .catch(err => res.status(400).json(err));
   },
 
   // remove reaction
@@ -105,7 +101,7 @@ const thoughtController = {
         }
         res.json(dbThoughtData);
       })
-      .catch((err) => res.status(400).json(err));
+      .catch(err => res.status(400).json(err));
   },
 };
 
